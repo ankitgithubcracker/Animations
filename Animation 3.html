@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation 3</title>
+    <style>
+        body{
+            background-color: #312a4d
+        }
+        .main{
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: auto;
+           
+            height: 500px;
+            width: 500px;
+            border: 1px solid transparent;
+        }
+        
+        #container{
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            width: 400px;
+            /* background: #6e629e; */
+            border: 8px dotted #8973e4;
+            position: absolute;
+            margin: auto;
+            top:0;
+            left:0;
+            bottom: 0;
+            right: 0;
+            display: block;
+            border-radius: 50%;
+            animation: tree 1.4s infinite linear;
+        }
+        @keyframes tree {
+            0%{transform: rotate(0deg);   }
+            100%{transform: rotate(360deg);  }
+           
+        }
+
+        .ring{
+            height: 300px;
+            width: 300px;
+            border: 8px dotted #8973e4;
+            position: absolute;
+            border-radius: 50%;
+            left: 42px;
+            top: -5px;
+            animation: tree 1.4s infinite linear;
+
+        }
+        .outerRing{
+            height: 300px;
+            width: 300px;
+            /* background: #6e629e; */
+            border: 8px dotted #8973e4;
+            position: absolute;
+            left: 18.5%;
+            top: 9%;
+            display: block;
+            border-radius: 50%;
+            animation: tree 1.4s infinite linear;
+            
+        }
+        .rotate{
+            height: 150px;
+            width: 150px;
+            /* background: #6e629e; */
+            border: 8px dotted #8973e4;
+            position: absolute;
+            left:65px;
+            top: -10px;
+            display: block;
+            border-radius: 50%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+   <div class="main"> 
+    <div id="container">
+        <div class="ring"></div>
+    </div>
+    <div class="outerRing">
+        <div class="rotate"></div>
+    </div>
+   </div>
+</body>
+</html>

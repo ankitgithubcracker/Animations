@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation 2</title>
+    <style>
+        body{
+            background-color: rgb(216, 210, 201);
+        }
+
+        #container{
+            height: 300px;
+            width: 300px;
+            background: linear-gradient(#fff, black);
+            border: 1px solid black;
+            position: absolute;
+            margin: auto;
+            top:0;
+            left:0;
+            bottom: 0;
+            right: 0;
+            display: block;
+            border-radius: 50%;
+            animation: tree 0.5s infinite linear;
+        }
+        @keyframes tree {
+            0%{transform: rotate(0deg);   }
+            100%{transform: rotate(360deg);  }
+           
+        }
+
+        .rotate{
+            position: absolute;
+            animation: treet 1s infinite linear;
+            height: 40px;
+            width: 40px;
+            background: #5ea8e6;
+            margin-top: 14px;
+            border: 1px solid red;
+            border-radius: 50%;;
+        }
+
+        @keyframes treet {
+            0%{ transform: scale(1);}
+            50%{ transform: scale(5);}            
+            100%{ transform: scale(1);}
+        }
+
+        .rotate:nth-child(1){
+            left: 70px;
+            top: -47px;
+            background-color: rgb(29, 129, 168);
+       }
+       .rotate:nth-child(2){
+            left: 160px;
+            top: -54px;
+            background-color: #2cb1e6;
+       }
+       .rotate:nth-child(3){
+            left: 240px;
+            top: -16px;
+            background-color: #137297;
+       }
+       .rotate:nth-child(4){
+            left: 290px;
+            top: 55px;
+            background-color: #1c5891;
+       }
+       .rotate:nth-child(5){
+            left: 300px;
+            top: 137px;
+            background-color: #1f4896;
+       }
+       .rotate:nth-child(6){
+            left: 270px;
+            top: 215px;
+            background-color: #162857;
+       }
+       .rotate:nth-child(7){
+            left: 210px;
+            top: 267px;
+            background-color: #1f4896;
+       }
+       .rotate:nth-child(8){
+            left: 125px;
+            top: 287px;
+            background-color: #1c5891;
+       }
+       .rotate:nth-child(9){
+            left: 32px;
+            top: 257px;
+            background-color: #137297;
+       }
+       .rotate:nth-child(10){
+            left: -30px;
+            top: 180px;
+            background-color: #2cb1e6;
+       }
+       .rotate:nth-child(11){
+            left: -42px;
+            top: 87px;
+            background-color: #165974;
+       }       
+
+       
+       
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="rotate"></div>
+        <div class="rotate"></div>
+        <div class="rotate"></div>
+        <div class="rotate"></div>
+        <div class="rotate"></div>
+        <div class="rotate"></div>
+        <div class="rotate"></div>
+        <div class="rotate"></div>
+        <div class="rotate"></div>
+        <div class="rotate"></div>
+        <div class="rotate"></div>
+        <div class="rotate"></div>
+    </div>
+</body>
+</html>
